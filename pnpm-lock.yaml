@@ -424,8 +424,8 @@ importers:
         specifier: ^26.15.7
         version: 26.15.7(electron-builder-squirrel-windows@26.15.7)
       electron-playwright-helpers:
-        specifier: 1.8.2
-        version: 1.8.2
+        specifier: 3.1.2
+        version: 3.1.2
       esbuild:
         specifier: 0.28.2
         version: 0.28.2
@@ -5919,8 +5919,9 @@ packages:
     peerDependencies:
       electron: '>=15.0.0'
 
-  electron-playwright-helpers@1.8.2:
-    resolution: {integrity: sha512-sM9fDSEFDOptKDa8oiNphiXdR1KR1uFe8yHnlrnvyQE1ScnHizca/SoYvUdtn+5IuVNTkT8MesKWJ6seS4/zuA==}
+  electron-playwright-helpers@3.1.2:
+    resolution: {integrity: sha512-YQLbe5qglTHlcvKHUnetGfkk9buepcyLwbX2ALZlsps9GYtepj01BD7XoFe/YLuMy7HPejyV+2rwz/pehE5B6g==}
+    engines: {node: '>=22.12.0'}
 
   electron-publish@26.15.3:
     resolution: {integrity: sha512-g/2bn8YTavY4cuS5F+jOS7zmZbXXBV8KZ8yHKfJjFPoKtzBqrpCdNPxBd3tqdBwP7BVd0lGzf7Bk2s0KesWZ4Q==}
@@ -7997,6 +7998,7 @@ packages:
 
   node-abort-controller@3.1.1:
     resolution: {integrity: sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==}
+    deprecated: This package is no longer needed on supported Node.js versions. Node.js 16+ includes AbortController and AbortSignal as built-in globals. All Node.js versions requiring this polyfill are end-of-life. Use the built-in globals instead.
 
   node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
@@ -15817,9 +15819,9 @@ snapshots:
       ajv: 8.20.0
       electron: 43.8.7
 
-  electron-playwright-helpers@1.8.2:
+  electron-playwright-helpers@3.1.2:
     dependencies:
-      '@electron/asar': 3.4.1
+      '@electron/asar': 4.3.1
 
   electron-publish@26.15.3:
     dependencies:
